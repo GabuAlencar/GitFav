@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background-color: #000000;
+}
+
+/* Parte do Header */
+
+:root{
+    font-size: 62.5%;
+}
+
+/* Imagem gitfav, ajustando seu tamanho e altura */
+#gitfav{
+    width: 18.6rem;
+    height: 3.2rem;
+    object-fit: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 112rem;
+    height: 4.8rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+}
+
+.search input{
+    width: 46.2rem;
+    height: 4.5rem;
+    color: #E1E1E6;
+    background-color: #06181C;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1.6rem;
+
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search img{
+    object-fit: cover;
+    background-color: #065E7C;
+}
+
+.search button{
+    background-color: #065E7C;   
+    color: #FFFFFF;     
+    padding: 1.2rem 3.2rem;
+ 
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.search button{
+    display: flex;
+    gap: 0.8rem;
+
+    align-items: center;
+}
+
+.search button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+/* PARTE DO BODY */
+
+table{
+    width: 112rem;
+    border-collapse: collapse;
+    
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+   
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+
+/* Parte THEAD */
+thead th{
+    color: #E1E1E6;
+    font-size: 2rem;
+    text-align: left;  
+    background-color: #092D38;
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+
+}
+
+table th:first-child{
+    border-top-left-radius: .4rem;
+    width: 45%;
+}
+
+table th:last-child{
+    border-top-right-radius: .4rem;
+}
+
+/* Parte TBODY */
+tbody{
+    color: #E1E1E6;
+    font-size: 2rem;
+
+}
+
+tbody img{
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user, td.repositories, td.followers, td.remove{
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+td.remove button{
+    color: #F75A68;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+td.remove button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+table tr:nth-child(even){
+    background: #06181C;
+    border: 1px solid #4A808C;
+}
+
+table tr:nth-child(odd){
+    background: #030a0c;
+    border: 1px solid #4A808C;
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+td.user a{
+    color: #E1E1E6;
+    text-decoration: none;
+}
+
+td.user a span{
+    color: #CCC;
+}
